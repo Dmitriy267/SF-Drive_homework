@@ -1,6 +1,10 @@
-export {coll,btn1,btn2,btn3,btn4,btn5,btn6};
+import React from "react";
+import ReactDOM from "react-dom";
+import  QuestionApp from "./components/QuestionApp"; 
 
-let coll = document.getElementsByClassName("collapsible");
+ReactDOM.render(<QuestionApp/>, document.getElementById("root"));
+
+  let coll = document.getElementsByClassName("collapsible");
 let i;
 
 for (i = 0; i < coll.length; i++) {
@@ -14,11 +18,8 @@ for (i = 0; i < coll.length; i++) {
     }
   });
    
-}
-     
-
-
-         const btn1=document.querySelector(".btn_1");
+} 
+      const btn1=document.querySelector(".btn_1");
      let icon1Answer=document.querySelector(".btn_1>img");
      let icon2Answer=document.querySelector(".icon_answer");
      const btn2=document.querySelector(".btn_2");
